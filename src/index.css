@@ -7,33 +7,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  @apply text-center mt-16 text-gray-800 max-w-3xl mx-auto;
+  @apply text-center mt-16 max-w-3xl mx-auto;
 }
 
 h1 {
   @apply text-2xl mb-2;
-}
-
-/* button {
-  @apply rounded bg-blue-500 text-white px-2 py-1 mb-2;
-} */
-
-/* button:hover {
-  @apply bg-blue-600;
-} */
-
-.remove-item {
-  @apply text-2xl;
-}
-
-input[type='text'] {
-  @apply w-full block text-lg border-2 border-solid border-gray-400 rounded px-4 py-2;
-}
-
-input::placeholder {
-  @apply text-gray-700;
-}
-
-.todo-item {
-  @apply flex;
 }
