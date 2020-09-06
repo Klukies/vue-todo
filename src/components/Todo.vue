@@ -17,13 +17,10 @@
 import Form from './Form.vue';
 import List from './List.vue';
 import Extra from './Extra.vue';
-import { TodoItem, useTodo } from '../composables/useTodo';
+import { useTodo } from '../composables/useTodo';
 
 export default {
   components: { Form, List, Extra },
-  props: {
-    todoList: Object as () => TodoItem[],
-  },
   setup() {
     const {
       todoList,
@@ -34,6 +31,7 @@ export default {
       removeFromList,
       toggleAllItems,
     } = useTodo();
+
     return {
       todoList,
       remainingItems,

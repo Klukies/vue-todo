@@ -15,7 +15,6 @@
 
 <script lang="ts">
 export default {
-  emits: ['toggle-all-items'],
   props: {
     remainingItems: Number,
     areAllItemsComplete: Boolean,

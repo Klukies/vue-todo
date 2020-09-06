@@ -17,8 +17,7 @@ import { TodoItem } from '../composables/useTodo';
 export default {
   components: { Item },
   props: {
-    todoList: Object as () => TodoItem[],
+    todoList: Array as () => TodoItem[],
   },
-  emits: ['toggle-completed', 'remove-from-list'],
 };
 </script>

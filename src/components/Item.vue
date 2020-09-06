@@ -10,11 +10,11 @@
 
 <script lang="ts">
 import { TodoItem } from '../composables/useTodo';
+
 export default {
   props: {
     todoItem: Object as () => TodoItem,
   },
-  emits: ['toggle-completed', 'remove-from-list'],
 };
 </script>
 

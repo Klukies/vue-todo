@@ -9,7 +9,6 @@ import { ref, Ref } from 'vue';
 import { TodoItem } from '../composables/useTodo';
 
 export default {
-  emits: ['add-to-list'],
   setup() {
     const toDoItem: Ref<TodoItem> = ref({ title: '', isCompleted: false });
 
