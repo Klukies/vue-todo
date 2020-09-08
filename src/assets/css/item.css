@@ -1,0 +1,19 @@
+.item {
+  @apply flex justify-between items-baseline px-1 pb-3;
+}
+
+.todo-item-left {
+  @apply flex items-center;
+}
+
+label {
+  @apply text-3xl pl-6;
+}
+
+.is-complete {
+  @apply text-gray-700 line-through;
+}
+
+.remove-item {
+  @apply inline-block text-2xl;
+}

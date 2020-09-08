@@ -13,3 +13,20 @@
 h1 {
   @apply text-2xl mb-2;
 }
+
+img {
+  @apply max-w-sm;
+}
+
+input,
+label {
+  @apply cursor-pointer;
+}
+
+label {
+  @apply p-3 text-gray-800;
+}
+
+label::selection {
+  @apply bg-none;
+}

@@ -22,21 +22,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.extra {
-  @apply flex justify-between pt-3 px-1 border-t-2 border-gray-200 border-solid;
-}
-
-input,
-label {
-  @apply cursor-pointer;
-}
-
-label {
-  @apply p-3 text-gray-800;
-}
-
-label::selection {
-  @apply bg-none;
-}
-</style>
+<style scoped src="../assets/css/extra.css" />

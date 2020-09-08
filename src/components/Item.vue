@@ -18,33 +18,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.item {
-  @apply flex justify-between items-baseline px-1 pb-3;
-}
-
-.todo-item-left {
-  @apply flex items-center;
-}
-
-input,
-label {
-  @apply cursor-pointer;
-}
-
-label {
-  @apply text-3xl p-3 pl-6 text-gray-800;
-}
-
-label::selection {
-  @apply bg-none;
-}
-
-.is-complete {
-  @apply text-gray-700 line-through;
-}
-
-.remove-item {
-  @apply inline-block text-2xl;
-}
-</style>
+<style scoped src="../assets/css/item.css" />

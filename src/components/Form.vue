@@ -17,16 +17,4 @@ export default {
 };
 </script>
 
-<style scoped>
-form {
-  @apply pb-6;
-}
-
-input[type='text'] {
-  @apply w-full block text-lg border-2 border-solid border-gray-400 rounded px-4 py-2;
-}
-
-input::placeholder {
-  @apply text-gray-700;
-}
-</style>
+<style scoped src="../assets/css/form.css" />

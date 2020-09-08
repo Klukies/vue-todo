@@ -1,0 +1,8 @@
+.extra {
+  @apply flex justify-between pt-3 px-1 border-t-2 border-gray-200 border-solid;
+}
+
+input,
+label {
+  @apply cursor-pointer;
+}
