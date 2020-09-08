@@ -10,13 +10,11 @@ const todoList: Ref<TodoItem[]> = ref([
   { title: 'Finish presentation', isCompleted: false },
 ]);
 const remainingItems = computed(() => todoList.value.length);
-const areAllItemsComplete = computed(() => allItemsAreCompleted());
-
-const allItemsAreCompleted = () => {
-  return todoList.value.reduce((areAllItemsCompleted, item) => {
+const areAllItemsComplete = computed(() =>
+  todoList.value.reduce((areAllItemsCompleted, item) => {
     return areAllItemsCompleted && item.isCompleted;
-  }, true);
-};
+  }, true),
+);
 
 export const useTodo = () => {
   const addToList = (todoItem: TodoItem) => {
@@ -36,7 +34,7 @@ export const useTodo = () => {
   };
 
   const toggleAllItems = () => {
-    if (allItemsAreCompleted()) {
+    if (areAllItemsComplete.value) {
       return setAllItems(false);
     }
 
