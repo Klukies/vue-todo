@@ -1,9 +1,9 @@
 <template>
-  <Form @add-to-list="toDoItem => addToList(toDoItem)" />
+  <Form @add-to-list="(toDoItem) => addToList(toDoItem)" />
   <List
     :todoList="todoList"
-    @toggle-completed="index => toggleCompleted(index)"
-    @remove-from-list="index => removeFromList(index)"
+    @toggle-completed="(index) => toggleCompleted(index)"
+    @remove-from-list="(index) => removeFromList(index)"
   />
   <Extra
     v-if="todoList.length"

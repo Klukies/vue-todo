@@ -7,9 +7,9 @@
         :checked="areAllItemsComplete"
         @change="$emit('toggle-all-items')"
       />
-      <label for="check-all">{{areAllItemsComplete ? 'Uncheck All' : 'Check All'}}</label>
+      <label for="check-all">{{ areAllItemsComplete ? 'Uncheck All' : 'Check All' }}</label>
     </div>
-    <span>{{remainingItems}} items left</span>
+    <span>{{ remainingItems }} items left</span>
   </div>
 </template>
 
