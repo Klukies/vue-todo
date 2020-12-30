@@ -11,8 +11,12 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
+import { defineProps, defineEmit } from 'vue';
 import Item from './Item.vue';
 
 defineProps<{ todoList: TodoItem[] }>();
+defineEmit({
+  'toggle-completed': (index: number) => true,
+  'remove-from-list': (index: number) => true,
+});
 </script>

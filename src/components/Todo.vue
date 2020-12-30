@@ -1,5 +1,5 @@
 <template>
-  <Form @add-to-list="(toDoItem) => addToList(toDoItem)" />
+  <Form @add-to-list="(todoItem) => addToList(todoItem)" />
   <List
     :todoList="todoList"
     @toggle-completed="(index) => toggleCompleted(index)"
