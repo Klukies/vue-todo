@@ -10,14 +10,9 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+import { defineProps } from 'vue';
 import Item from './Item.vue';
-import { TodoItem } from '../composables/useTodo';
 
-export default {
-  components: { Item },
-  props: {
-    todoList: Array as () => TodoItem[],
-  },
-};
+defineProps<{ todoList: TodoItem[] }>();
 </script>

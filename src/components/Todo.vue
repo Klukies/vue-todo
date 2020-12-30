@@ -13,34 +13,19 @@
   />
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import Form from './Form.vue';
 import List from './List.vue';
 import Extra from './Extra.vue';
 import { useTodo } from '../composables/useTodo';
 
-export default {
-  components: { Form, List, Extra },
-  setup() {
-    const {
-      todoList,
-      remainingItems,
-      areAllItemsComplete,
-      addToList,
-      toggleCompleted,
-      removeFromList,
-      toggleAllItems,
-    } = useTodo();
-
-    return {
-      todoList,
-      remainingItems,
-      areAllItemsComplete,
-      addToList,
-      toggleCompleted,
-      removeFromList,
-      toggleAllItems,
-    };
-  },
-};
+const {
+  todoList,
+  remainingItems,
+  areAllItemsComplete,
+  addToList,
+  toggleCompleted,
+  removeFromList,
+  toggleAllItems,
+} = useTodo();
 </script>

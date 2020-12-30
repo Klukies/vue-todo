@@ -1,10 +1,5 @@
 import { ref, Ref, computed } from 'vue';
 
-export interface TodoItem {
-  title: string;
-  isCompleted: boolean;
-}
-
 const todoList: Ref<TodoItem[]> = ref([
   { title: "Finish demo's", isCompleted: false },
   { title: 'Finish presentation', isCompleted: false },

@@ -3,11 +3,6 @@
   <Todo />
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import Todo from './components/Todo.vue';
-
-export default {
-  name: 'App',
-  components: { Todo },
-};
 </script>

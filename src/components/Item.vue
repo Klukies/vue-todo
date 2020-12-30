@@ -8,14 +8,10 @@
   </div>
 </template>
 
-<script lang="ts">
-import { TodoItem } from '../composables/useTodo';
+<script setup lang="ts">
+import { defineProps } from 'vue';
 
-export default {
-  props: {
-    todoItem: Object as () => TodoItem,
-  },
-};
+defineProps<{ todoItem: TodoItem }>();
 </script>
 
 <style scoped src="../assets/css/item.css" />

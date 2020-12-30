@@ -13,13 +13,10 @@
   </div>
 </template>
 
-<script lang="ts">
-export default {
-  props: {
-    remainingItems: Number,
-    areAllItemsComplete: Boolean,
-  },
-};
+<script setup lang="ts">
+import { defineProps } from 'vue';
+
+defineProps<{ remainingItems: number; areAllItemsComplete: boolean }>();
 </script>
 
 <style scoped src="../assets/css/extra.css" />

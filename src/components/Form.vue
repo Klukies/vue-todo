@@ -4,17 +4,10 @@
   </form>
 </template>
 
-<script lang="ts">
-import { ref, Ref } from 'vue';
-import { TodoItem } from '../composables/useTodo';
+<script setup lang="ts">
+import { ref } from 'vue';
 
-export default {
-  setup() {
-    const toDoItem: Ref<TodoItem> = ref({ title: '', isCompleted: false });
-
-    return { toDoItem };
-  },
-};
+const toDoItem = ref<TodoItem>({ title: '', isCompleted: false });
 </script>
 
 <style scoped src="../assets/css/form.css" />
